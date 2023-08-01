@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    calculate
+{% endblock %}
+
+
+{% block content %}
+<h1>Калькулятор</h1>
+    <form method="post" enctype="multipart/form-data">
+        <div>
+            <label for="num1"> Число1 <input 
+                type="int"
+                placeholder="Ввод" 
+                id="calculate_html"
+                 name="num1"></input>
+            </label>
+            <label for="num2"> Число2 <input 
+                type="int"
+                placeholder="Ввод" 
+                id="calculate_html"
+                 name="num2"></input>
+            </label>
+            <label for="todo"> что сделать? символ <input 
+                type="text"
+                placeholder="Ввод" 
+                id="calculate_html"
+                 name="todo"></input>
+            </label>
+        </div>
+        <button type="res">Вычислить!</button>
+    </form>   
+{% endblock %}

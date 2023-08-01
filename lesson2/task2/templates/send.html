@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    login & password
+{% endblock %}
+
+
+{% block content %}
+<h1>Форма обратной связи</h1>
+    <form method="post" enctype="multipart/form-data">
+        <div>
+            <label for="login">login <input 
+                type="text"
+                placeholder="свяжиетсь с нами!" 
+                id="message_html"
+                 name="message_python"></input>
+            </label>
+        </div>
+        <button type="submit">Отправить</button>
+    </form>   
+{% endblock %}

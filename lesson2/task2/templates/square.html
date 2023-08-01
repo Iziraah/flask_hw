@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    calculate square
+{% endblock %}
+
+
+{% block content %}
+<h1>Квадратилятор</h1>
+    <form method="post" enctype="multipart/form-data">
+        <div>
+            <label for="num1"> Число <input 
+                type="int"
+                placeholder="Ввод" 
+                id="square_html"
+                 name="num1"></input>
+            </label>
+        </div>
+        <button type="res">Вычислить квадрат!</button>
+    </form>   
+{% endblock %}

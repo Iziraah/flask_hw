@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Success
+{% endblock %}
+
+{% block content %}
+    <h2>Hello, {{ name }}, you have successfully logged in!</h2>
+    <form method="post">
+        <button><a href="/logout/">Exit</a></button>
+    </form>
+{% endblock %}
