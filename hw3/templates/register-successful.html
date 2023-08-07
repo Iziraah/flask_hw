@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Register successful
+{% endblock %}
+
+{% block content %}
+    <h3>Congratulations!</h3>
+    <form method="post" class="registration-form-wrp">
+        You have successful registered with name: "{{ user_name }}", and E-mail: "{{ user_email }}" !
+        <p>
+           <button><a href="/new-reg/" style="color: black; text-decoration: none">Register new user</a></button>
+        </p>
+    </form>
+{% endblock %}
